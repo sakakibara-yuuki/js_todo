@@ -1,7 +1,9 @@
 # What is this?
+
 This is a simple todo app written in JavaScript.
 
 ## Features
+
 - Add a todo
 - Delete a todo
 - Edit todo text
