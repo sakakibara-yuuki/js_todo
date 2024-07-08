@@ -147,6 +147,8 @@ class TodoList extends EventTarget {
   }
 
   onDeleteItem() {
+    if (!window.confirm('本当によろしいですか？')){return};
+
     this.items = this.items.filter((item) => event.detail.id != item.id);
     this.todoList.querySelector(`li.todo-item-${event.detail.id}`).remove();
     this.todoList.dispatchEvent(new CustomEvent('check'));
